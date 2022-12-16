@@ -1,9 +1,7 @@
 import time
-
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
 from base.base_class import Base
 
 
@@ -42,11 +40,11 @@ class Login_page(Base):
         print('Input user name')
 
     def input_password(self, password):
-        self.get_user_name().send_keys(password)
+        self.get_password().send_keys(password)
         print('Input password')
 
     def click_login_button(self):
-        self.get_user_name().click()
+        self.click_login_button().click()
         print('Click login button')
 
 
