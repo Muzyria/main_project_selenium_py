@@ -43,6 +43,6 @@ class Test_1():
         print('Test Succcess !!!')
 
 
-test = Test_1()
-test.test_select_product()
+# test = Test_1()
+# test.test_select_product()
 
