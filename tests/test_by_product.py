@@ -9,7 +9,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from pages.login_page import Login_page
 
 
-def test_select_product():
+def test_by_product():
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
     print('Start tests')
