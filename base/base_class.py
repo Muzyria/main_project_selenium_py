@@ -24,4 +24,4 @@ class Base():
     def get_screenshot(self):
         now_date = datetime.datetime.utcnow().strftime('%Y.%m.%d.%H.%M.%S')
         name_screenshot = 'screenshot_' + now_date + '.png'
-        self.driver.save_screenshot(r'elenium\screen\\' + name_screenshot)
+        self.driver.save_screenshot(r'C:\Git_Muzyria\Selenium_py\screen\\' + name_screenshot)

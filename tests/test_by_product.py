@@ -8,6 +8,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 from pages.cart_page import Cart_page
 from pages.client_infomation_page import Client_infomation_page
+from pages.finish_page import Finish_page
 from pages.login_page import Login_page
 from pages.main_page import Main_page
 from pages.payment_page import Payment_page
@@ -33,7 +34,7 @@ def test_by_product():
     pp = Payment_page(driver)
     pp.payment()
 
+    f = Finish_page(driver)
+    f.get_screenshot()
+
     time.sleep(5)
-
-
-
