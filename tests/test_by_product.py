@@ -7,6 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 
 from pages.login_page import Login_page
+from pages.main_page import Main_page
 
 
 def test_by_product():
@@ -16,10 +17,8 @@ def test_by_product():
 
     login = Login_page(driver)
     login.authorization()
-
-    enter_shopping_cart = WebDriverWait(driver, 30).until(EC.element_to_be_clickable((By.XPATH, '//a[@class="shopping_cart_link"]')))
-    enter_shopping_cart.click()
-    print('Click Enter Shopping Cart')
+    mp = Main_page(driver)
+    mp.select_product()
 
     time.sleep(5)
 
