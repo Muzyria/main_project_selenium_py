@@ -44,7 +44,7 @@ class Login_page(Base):
         print('Input password')
 
     def click_login_button(self):
-        self.get_user_name().click()
+        self.get_login_button().click()
         print('Click login button')
 
 
