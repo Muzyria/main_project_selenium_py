@@ -25,3 +25,10 @@ class Base():
         now_date = datetime.datetime.utcnow().strftime('%Y.%m.%d.%H.%M.%S')
         name_screenshot = 'screenshot_' + now_date + '.png'
         self.driver.save_screenshot(r'C:\Git_Muzyria\Selenium_py\screen\\' + name_screenshot)
+
+    """Method assert url"""
+
+    def assert_url(self, result):
+        get_url = self.driver.current_url
+        assert get_url == result
+        print('Good value url')
