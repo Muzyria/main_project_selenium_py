@@ -22,6 +22,7 @@ def test_select_product():
     enter_shopping_cart.click()
     print('Click Enter Shopping Cart')
 
+    time.sleep(5)
 
 
 
