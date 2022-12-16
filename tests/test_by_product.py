@@ -7,6 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 
 from pages.cart_page import Cart_page
+from pages.client_infomation_page import Client_infomation_page
 from pages.login_page import Login_page
 from pages.main_page import Main_page
 
@@ -22,6 +23,8 @@ def test_by_product():
     mp.select_product()
     cp = Cart_page(driver)
     cp.product_confirmation()
+    cip = Client_infomation_page(driver)
+    cip.input_information()
 
     time.sleep(5)
 
