@@ -9,9 +9,9 @@ from webdriver_manager.chrome import ChromeDriverManager
 from pages.login_page import Login_page
 
 
-class Test_1:
+class Test_1():
 
-    def select_product(self):
+    def test_select_product(self):
         driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
         base_url = 'https://www.saucedemo.com/'
         driver.get(base_url)
@@ -44,5 +44,5 @@ class Test_1:
 
 
 test = Test_1()
-test.select_product()
+test.test_select_product()
 
