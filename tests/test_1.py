@@ -9,7 +9,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from pages.login_page import Login_page
 
 
-class Test_1():
+class Test_1:
 
     def select_product(self):
         driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
@@ -18,7 +18,7 @@ class Test_1():
         driver.maximize_window()
         time.sleep(2)
 
-        print('Start test')
+        print('Start tests')
 
         login_standard_user = "standard_user"
         password_all = "secret_sauce"
