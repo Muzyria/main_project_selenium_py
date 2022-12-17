@@ -69,17 +69,17 @@ class Main_page(Base):
 
     # Methods
 
-    def select_product_1(self):
+    def select_products_1(self):
         self.get_current_url()
         self.click_select_product_1()
         self.click_cart()
 
-    def select_product_2(self):
+    def select_products_2(self):
         self.get_current_url()
         self.click_select_product_2()
         self.click_cart()
 
-    def select_product_3(self):
+    def select_products_3(self):
         self.get_current_url()
         self.click_select_product_3()
         self.click_cart()

@@ -23,7 +23,7 @@ def test_by_product_1():
     login.authorization()
 
     mp = Main_page(driver)
-    mp.select_product_1()
+    mp.select_products_1()
 
     cp = Cart_page(driver)
     cp.product_confirmation()
@@ -49,7 +49,7 @@ def test_by_product_2():
     login.authorization()
 
     mp = Main_page(driver)
-    mp.select_product_2()
+    mp.select_products_2()
 
     cp = Cart_page(driver)
     cp.product_confirmation()
@@ -66,7 +66,7 @@ def test_by_product_3():
     login.authorization()
 
     mp = Main_page(driver)
-    mp.select_product_3()
+    mp.select_products_3()
 
     cp = Cart_page(driver)
     cp.product_confirmation()
