@@ -23,7 +23,7 @@ def test_link_about():
     login.authorization()
 
     mp = Main_page(driver)
-    mp.select_product()
+    mp.select_menu_about()
 
     print('Finish tests')
     time.sleep(5)

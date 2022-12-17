@@ -61,3 +61,4 @@ class Main_page(Base):
         self.get_current_url()
         self.click_menu()
         self.click_link_about()
+        self.assert_url('https://saucelabs.com/')
