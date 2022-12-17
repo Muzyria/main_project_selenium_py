@@ -71,5 +71,4 @@ def test_by_product_3():
     cp = Cart_page(driver)
     cp.product_confirmation()
 
-
     time.sleep(5)
