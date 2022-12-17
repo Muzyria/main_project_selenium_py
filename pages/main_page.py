@@ -15,6 +15,8 @@ class Main_page(Base):
 
     select_product_1 = '//button[@id="add-to-cart-sauce-labs-backpack"]'
     cart = '//a[@class="shopping_cart_link"]'
+    menu = '//button[@id="react-burger-menu-btn"]'
+    link_about = '//a[@id="about_sidebar_link"]'
 
     # Getters
 
@@ -23,6 +25,12 @@ class Main_page(Base):
 
     def get_cart(self):
         return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.cart)))
+
+    def get_menu(self):
+        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.menu)))
+
+    def get_lint_about(self):
+        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.link_about)))
 
     # Actions
 
@@ -34,9 +42,22 @@ class Main_page(Base):
         self.get_cart().click()
         print('Click cart')
 
+    def click_menu(self):
+        self.get_menu().click()
+        print('Click menu')
+
+    def click_link_about(self):
+        self.get_menu().click()
+        print('Click link about')
+
     # Methods
 
     def select_product(self):
         self.get_current_url()
         self.click_select_product_1()
         self.click_cart()
+
+    def select_menu_about(self):
+        self.get_current_url()
+        self.click_menu()
+        self.click_link_about()
