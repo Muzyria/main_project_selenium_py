@@ -28,14 +28,14 @@ def test_by_product_1():
     cp = Cart_page(driver)
     cp.product_confirmation()
 
-    # cip = Client_infomation_page(driver)
+    # cip = Client_information_page(driver)
     # cip.input_information()
     #
     # pp = Payment_page(driver)
     # pp.payment()
 
-    f = Finish_page(driver)
-    f.finish()
+    # f = Finish_page(driver)
+    # f.finish()
 
     time.sleep(5)
 
