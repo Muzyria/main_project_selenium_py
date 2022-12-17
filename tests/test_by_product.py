@@ -1,4 +1,6 @@
 import time
+
+import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
@@ -14,6 +16,7 @@ from pages.main_page import Main_page
 from pages.payment_page import Payment_page
 
 
+@pytest.mark.run(order=1)
 def test_by_product_1():
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
@@ -40,6 +43,7 @@ def test_by_product_1():
     time.sleep(5)
 
 
+@pytest.mark.run(order=2)
 def test_by_product_2():
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
@@ -57,6 +61,7 @@ def test_by_product_2():
     time.sleep(5)
 
 
+@pytest.mark.run(order=3)
 def test_by_product_3():
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
