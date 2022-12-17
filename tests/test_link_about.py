@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 
 from pages.cart_page import Cart_page
-from pages.client_infomation_page import Client_infomation_page
+from pages.client_information_page import Client_information_page
 from pages.finish_page import Finish_page
 from pages.login_page import Login_page
 from pages.main_page import Main_page

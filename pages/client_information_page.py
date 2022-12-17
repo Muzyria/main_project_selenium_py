@@ -5,7 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from base.base_class import Base
 
 
-class Client_infomation_page(Base):
+class Client_information_page(Base):
 
     def __init__(self, driver):
         super().__init__(driver)
