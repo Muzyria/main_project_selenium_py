@@ -47,7 +47,7 @@ class Main_page(Base):
         print('Click menu')
 
     def click_link_about(self):
-        self.get_menu().click()
+        self.get_lint_about().click()
         print('Click link about')
 
     # Methods
