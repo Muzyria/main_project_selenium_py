@@ -17,7 +17,7 @@ from pages.payment_page import Payment_page
 
 
 # @pytest.mark.run(order=1)
-def test_by_product_1(set_up):
+def test_by_product_1(set_up, set_group):
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
     print('Start tests 1')
@@ -45,7 +45,7 @@ def test_by_product_1(set_up):
 
 
 # @pytest.mark.run(order=2)
-def test_by_product_2(set_up):
+def test_by_product_2(set_up, set_group):
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
     print('Start tests 2')
@@ -64,7 +64,7 @@ def test_by_product_2(set_up):
 
 
 # @pytest.mark.run(order=3)
-def test_by_product_3():
+def test_by_product_3(set_up, set_group):
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
     print('Start tests 3')
