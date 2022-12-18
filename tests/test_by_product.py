@@ -45,38 +45,38 @@ def test_by_product_1(set_up):
 
 
 # @pytest.mark.run(order=2)
-# def test_by_product_2():
-#     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-#
-#     print('Start tests 2')
-#
-#     login = Login_page(driver)
-#     login.authorization()
-#
-#     mp = Main_page(driver)
-#     mp.select_products_2()
-#
-#     cp = Cart_page(driver)
-#     cp.product_confirmation()
-#
-#     time.sleep(5)
-#     driver.quit()
-#
-#
+def test_by_product_2(set_up):
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+
+    print('Start tests 2')
+
+    login = Login_page(driver)
+    login.authorization()
+
+    mp = Main_page(driver)
+    mp.select_products_2()
+
+    cp = Cart_page(driver)
+    cp.product_confirmation()
+
+    # time.sleep(5)
+    driver.quit()
+
+
 # @pytest.mark.run(order=3)
-# def test_by_product_3():
-#     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-#
-#     print('Start tests 3')
-#
-#     login = Login_page(driver)
-#     login.authorization()
-#
-#     mp = Main_page(driver)
-#     mp.select_products_3()
-#
-#     cp = Cart_page(driver)
-#     cp.product_confirmation()
-#
-#     time.sleep(5)
-#     driver.quit()
+def test_by_product_3():
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+
+    print('Start tests 3')
+
+    login = Login_page(driver)
+    login.authorization()
+
+    mp = Main_page(driver)
+    mp.select_products_3()
+
+    cp = Cart_page(driver)
+    cp.product_confirmation()
+
+    # time.sleep(5)
+    driver.quit()
