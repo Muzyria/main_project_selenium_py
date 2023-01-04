@@ -91,7 +91,8 @@ class Main_page(Base):
         self.click_cart()
 
     def select_menu_about(self):
-        self.get_current_url()
-        self.click_menu()
-        self.click_link_about()
-        self.assert_url('https://saucelabs.com/')
+        with allure.step("Select menu about"):
+            self.get_current_url()
+            self.click_menu()
+            self.click_link_about()
+            self.assert_url('https://saucelabs.com/')
